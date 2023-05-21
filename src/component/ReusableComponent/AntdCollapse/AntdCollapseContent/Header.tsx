@@ -20,6 +20,7 @@ const HeaderContent = ({ title, isCompleted, id, subTasks }: Props) => {
         <div className={styles.headingContainer}>
           <h2>{title}</h2>
           {subTasks.length > 0 && <TbSubtask size={15} />}
+          {subTasks.length > 0 && <div>{subTasks.length}</div>}
         </div>
         <div className={styles.iconContainer}>
           {isCompleted ? (
