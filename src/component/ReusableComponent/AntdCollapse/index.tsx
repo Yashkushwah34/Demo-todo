@@ -81,6 +81,9 @@ const AntdCollapse = ({ tasks, activeTabsHandler }: Props) => {
               >
                 {el.isCompleted === false && (
                   <div className={styles.subtaskAddButton}>
+                    <div>
+                      <h3>SubTasks</h3>
+                    </div>
                     <Button
                       type="primary"
                       onClick={() => addSubtaskHandler(el.id)}
