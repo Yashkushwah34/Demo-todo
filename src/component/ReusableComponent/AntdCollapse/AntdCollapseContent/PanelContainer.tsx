@@ -5,6 +5,8 @@ import { IoIosDoneAll } from "react-icons/io";
 import { AntdProps } from "../../../../typeDeclarations/apiResponse";
 import { useData } from "../../../Context/dataContext";
 
+import { Tooltip } from "antd";
+
 interface Props extends AntdProps {
   subTaskId: string;
 }
@@ -25,14 +27,18 @@ const PanelContainer = ({
         </div>
         <div className={styles.iconContainer}>
           {isCompleted ? (
-            <IoIosDoneAll size={30} color="rgb(95, 230, 33)" />
+            <Tooltip title="Task Completed">
+              <IoIosDoneAll size={30} color="rgb(95, 230, 33)" />
+            </Tooltip>
           ) : (
-            <IoIosAlert
-              size={25}
-              color="#ffa900"
-              className={styles.pendingIcon}
-              onClick={() => completeSubTaskHandler(taskId, subTaskId)}
-            />
+            <Tooltip title="Click to Complete Task">
+              <IoIosAlert
+                size={25}
+                color="#ffa900"
+                className={styles.pendingIcon}
+                onClick={() => completeSubTaskHandler(taskId, subTaskId)}
+              />
+            </Tooltip>
           )}
         </div>
       </div>

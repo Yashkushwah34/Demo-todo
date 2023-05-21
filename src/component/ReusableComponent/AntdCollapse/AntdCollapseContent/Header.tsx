@@ -3,6 +3,7 @@ import styles from "./header.module.scss";
 import { IoIosDoneAll } from "react-icons/io";
 import { IoIosAlert } from "react-icons/io";
 import { TbSubtask } from "react-icons/tb";
+import { Tooltip } from "antd";
 
 import { AntdProps, SubTask } from "../../../../typeDeclarations/apiResponse";
 import { useData } from "../../../Context/dataContext";
@@ -24,14 +25,18 @@ const HeaderContent = ({ title, isCompleted, id, subTasks }: Props) => {
         </div>
         <div className={styles.iconContainer}>
           {isCompleted ? (
-            <IoIosDoneAll size={30} color="rgb(95, 230, 33)" />
+            <Tooltip title="Task Completed">
+              <IoIosDoneAll size={30} color="rgb(95, 230, 33)" />
+            </Tooltip>
           ) : (
-            <IoIosAlert
-              size={25}
-              color="#ffa900"
-              className={styles.pendingIcon}
-              onClick={() => completeTaskHandler(id)}
-            />
+            <Tooltip title="Click to Complete Task">
+              <IoIosAlert
+                size={25}
+                color="#ffa900"
+                className={styles.pendingIcon}
+                onClick={() => completeTaskHandler(id)}
+              />
+            </Tooltip>
           )}
         </div>
       </div>
