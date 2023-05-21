@@ -1,0 +1,20 @@
+.container {
+  width: -webkit-fill-available;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 2px 6px 12px 0px #7672723d;
+  justify-content: space-between;
+  color: black;
+  padding: 0 15px;
+  .iconContainer {
+    border: 1px solid black;
+    padding: 7px 10px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #141552;
+  }
+}

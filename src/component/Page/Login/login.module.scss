@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(20, 21, 82);
+}
+
+.loginContainer {
+  width: 100%;
+  padding: 50px 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.welcomeTextContainer {
+  width: 100%;
+  text-align: center;
+  h1 {
+    color: #fff;
+  }
+}
+
+.heading {
+  h2 {
+    text-align: center;
+  }
+  padding-bottom: 10px;
+}
+
+.loginInput {
+  width: 100%;
+  border-bottom: 1px solid rgb(185, 181, 181) !important;
+}
+
+.error {
+  border-bottom: 1px solid rgb(170, 40, 40) !important;
+}
+
+.text {
+  text-align: center;
+  .signupText {
+    color: rgb(38, 38, 167);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

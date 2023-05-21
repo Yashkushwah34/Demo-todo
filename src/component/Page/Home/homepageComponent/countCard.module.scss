@@ -1,0 +1,18 @@
+.container {
+  border: 1px solid #7672723d;
+  padding: 8px 14px;
+  border-radius: 3px;
+  box-shadow: 2px 6px 12px 0px #7672723d;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 2px 6px 12px 0px #303ce63d;
+  }
+}
+
+.countText {
+  h2 {
+    font-size: 32px;
+    color: rgb(48, 47, 47);
+  }
+}

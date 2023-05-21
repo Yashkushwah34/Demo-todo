@@ -1,0 +1,24 @@
+.mainContainer {
+  :global {
+    .ant-collapse-header {
+      align-items: center !important;
+      padding: 6px 16px 3px !important;
+    }
+    .ant-collapse-content-box {
+      padding: 0px 40px 0 20px !important;
+    }
+  }
+}
+
+.subtaskAddButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.noTaskText {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}

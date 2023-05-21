@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  column-gap: 10px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(72, 74, 190);
+    cursor: pointer;
+  }
+  h4 {
+    color: #fff;
+  }
+}
+
+.activeNav {
+  background-color: rgb(72, 74, 190);
+}

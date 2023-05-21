@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #302f2f;
+  h2 {
+    font-weight: 400;
+  }
+  svg {
+    fill: #fff;
+  }
+}
+
+.pendingIcon {
+  &:hover {
+    cursor: pointer;
+  }
+}
